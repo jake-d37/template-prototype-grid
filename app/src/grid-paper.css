@@ -1,17 +1,20 @@
 :root {
     --color-background: #fffee5;
-    --color-grid-lines: #c8c6b5;
+    --color-grid-lines: #dddcc9;
 
     --grid-width: 60px;
     --line-width: 1px;
+
+    --grid-offset: calc(var(--grid-width) / 2);
 }
 
 body {
     background-color: var(--color-background);
-    background-image: 
+    background-image:
         linear-gradient(to right, var(--color-grid-lines) var(--line-width), transparent var(--line-width)),
-        linear-gradient(to bottom,var(--color-grid-lines) var(--line-width), transparent var(--line-width));
+        linear-gradient(to bottom, var(--color-grid-lines) var(--line-width), transparent var(--line-width));
     background-size: var(--grid-width) var(--grid-width);
-
-    background-position: calc(var(--grid-width) / 2) calc(var(--grid-width) / 2);
+    background-position: var(--grid-offset) var(--grid-offset);
+    margin: 0;
+    padding: 0;
 }
