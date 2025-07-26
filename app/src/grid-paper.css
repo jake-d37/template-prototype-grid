@@ -1,0 +1,17 @@
+:root {
+    --color-background: #fffee5;
+    --color-grid-lines: #c8c6b5;
+
+    --grid-width: 60px;
+    --line-width: 1px;
+}
+
+body {
+    background-color: var(--color-background);
+    background-image: 
+        linear-gradient(to right, var(--color-grid-lines) var(--line-width), transparent var(--line-width)),
+        linear-gradient(to bottom,var(--color-grid-lines) var(--line-width), transparent var(--line-width));
+    background-size: var(--grid-width) var(--grid-width);
+
+    background-position: calc(var(--grid-width) / 2) calc(var(--grid-width) / 2);
+}
